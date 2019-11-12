@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 public class PhoneBook {
     private HashMap<String, HashSet<String>> phoneBook = new HashMap<>();
-        public void add(String surname, String phoneNumber) {
+    public void add(String surname, String phoneNumber) {
         if (phoneBook.containsKey(surname)) {
             phoneBook.get(surname).add(phoneNumber);
         } else {
